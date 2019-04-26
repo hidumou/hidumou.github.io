@@ -6,7 +6,7 @@ install:
   - npm install
 
 script:
-  - hexo g
+  - hexo clean && hexo generate
 
 after_script:
   - cd ./public
@@ -14,7 +14,7 @@ after_script:
   - git config user.name "haner199401"
   - git config user.email "haner.du@qq.com"
   - git add .
-  - git commit -m "update site"
+  - git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
   - git push --force --quiet "https://${githubblog}@${GH_REF}" master:master
 # E: Build LifeCycle
 
