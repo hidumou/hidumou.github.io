@@ -23,4 +23,4 @@ branches:
     - blog-source
 env:
  global:
-   - GH_REF: https://github.com/haner199401/haner199401.github.io.git
+   - GH_REF: github.com/haner199401/haner199401.github.io.git
