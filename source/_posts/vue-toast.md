@@ -3,7 +3,7 @@ date: 2016-07-08 16:49:01
 tags:
 ---
 
-![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/develop/images/vue-toast-demo.gif)
+![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/blog-source/images/vue-toast-demo.gif)
 
 <!--more-->
 

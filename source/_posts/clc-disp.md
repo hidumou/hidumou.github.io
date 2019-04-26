@@ -2,7 +2,7 @@ title: 乘法口诀表打印
 date: 2017-07-14 09:40:31
 ---
 
-![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/develop/images/chengfakoujue.gif)
+![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/blog-source/images/chengfakoujue.gif)
 <!--more-->
 
 ``` css

@@ -6,10 +6,10 @@ date: 2015-08-10 12:00:01
 `Debounce:去除抖动,防抖动的意思~`
 
 #### 场景一(监测滚动实现加载更多或者其他业务)
-![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/develop/images/js-no-throttle.gif)
+![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/blog-source/images/js-no-throttle.gif)
 
 #### 场景二(远程校验用户名是否唯一)
-![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/develop/images/js-no-debounce.gif)
+![](https://raw.githubusercontent.com/haner199401/haner199401.github.io/blog-source/images/js-no-debounce.gif)
 
 
 <div class="tip">
