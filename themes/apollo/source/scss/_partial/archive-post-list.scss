@@ -1,0 +1,28 @@
+.archive {
+  max-width: 500px;
+  margin: 5em auto;
+  .post-item {
+    padding: 10px 0 0 50px;
+    display: flex;
+    display: -webkit-box;
+  }
+  .post-time,
+  .post-title-link {
+    font-size: 1rem;
+  }
+  .post-title-link {
+    display: inline-block;
+    flex: 1;
+    -webkit-box-flex: 1;
+    color: #42b983;
+    word-break: break-all;
+    &:hover {
+      border-bottom: 0;
+      color: #267B54;
+    }
+  }
+  .post-info {
+    width: 125px;
+    color: #7f8c8d;
+  }
+}

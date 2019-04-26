@@ -1,0 +1,16 @@
+logs
+*.log
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+.lock-wscript
+build/Release
+.DS_Store
+Thumbs.db
+db.json
+node_modules/
+public/
+.deploy*/
+.idea/

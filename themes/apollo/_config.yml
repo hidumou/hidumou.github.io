@@ -1,0 +1,21 @@
+menu:
+    博客: /
+    归档: /archives/
+    GitHub: https://github.com/haner199401
+    Rss: /atom.xml
+
+favicon: /favicon.png
+logo: /favicon.png
+
+# Comment
+# e.g disqus: seansun
+disqus:
+duoshuo: Haner
+
+# Copyright Infomation
+startyear: 2014
+
+# Font CDN
+#true : use google fonts api, not stable for chinese visitor sometimes, caused by force majeure factor
+#false: use useso fonts api instead of google's, great response speed for chinese visitor
+googlefonts: false
