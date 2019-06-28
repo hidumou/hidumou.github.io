@@ -88,7 +88,6 @@ date: 2015-08-10 00:00:00
 - [x] this is a complete item
 - [ ] this is an incomplete item
 
-
 ---
 
 
