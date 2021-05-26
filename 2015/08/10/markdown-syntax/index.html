@@ -1,0 +1,51 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Markdown 常用的语法记录 · Haner.Du</title><meta name="description" content="Markdown 常用的语法记录 - Haner"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="https://github.com/haner199401" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Markdown 常用的语法记录</h1><div class="post-info">2015年8月10日</div><div class="post-content"><p><img src="https://raw.githubusercontent.com/haner199401/haner199401.github.io/blog-source/images/7bf559e2eaec148ff023f0c1c45e3fdf.gif" alt><br><a id="more"></a></p>
+<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line">#### 四级标题</span><br></pre></td></tr></table></figure>
+<h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* 1</span><br><span class="line">* 2</span><br><span class="line">* 3</span><br></pre></td></tr></table></figure>
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 1</span><br><span class="line">2. 1</span><br><span class="line">3. 1</span><br></pre></td></tr></table></figure>
+<ol>
+<li>1</li>
+<li>1</li>
+<li>1</li>
+</ol>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; 例如这样</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>例如这样</p>
+</blockquote>
+<h1 id="图片与链接"><a href="#图片与链接" class="headerlink" title="图片与链接"></a>图片与链接</h1><h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![简介](图片地址)</span><br></pre></td></tr></table></figure>
+<p><img src="http://25.io/mou/Mou_128.png" alt="xxx"></p>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[简介](链接地址)</span><br></pre></td></tr></table></figure>
+<p><a href="http://haner.me" target="_blank" rel="noopener">我的博客</a></p>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><pre><code>居中方式 根据第二行的 `:` 位置
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">| column1 | column3 | column3|</span><br><span class="line">| :- | :-: | -: |</span><br><span class="line">| 居左 | 居中| 居右 |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">column1</th>
+<th style="text-align:center">column3</th>
+<th style="text-align:right">column3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">居左</td>
+<td style="text-align:center">居中</td>
+<td style="text-align:right">居右</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li style="list-style: none"><input type="checkbox" checked> @mentions, #refs, <a href>links</a>, <strong>formatting</strong>, and <del>tags</del> supported</li>
+<li style="list-style: none"><input type="checkbox" checked> list syntax required (any unordered or ordered list supported)</li>
+<li style="list-style: none"><input type="checkbox" checked> this is a complete item</li>
+<li style="list-style: none"><input type="checkbox"> this is an incomplete item</li>
+</ul>
+<hr>
+<blockquote>
+<p><a href="https://guides.github.com/features/mastering-markdown/" target="_blank" rel="noopener">参考链接</a></p>
+</blockquote>
+</div></article></div></section><footer><div class="paginator"><a href="/2015/08/10/throttle-and-debounce/" class="prev">上一篇</a></div><!--include partial/comment--><div class="copyright"><p>简单点,装逼的方式简单点~</p><p><a href="https://haner199401.github.io">Haner</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

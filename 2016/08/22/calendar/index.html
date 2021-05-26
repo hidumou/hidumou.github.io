@@ -1,0 +1,18 @@
+<!DOCTYPE html><html lang="zh-cn"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Calendar · Haner.Du</title><meta name="description" content="Calendar - Haner"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">博客</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">归档</a></li><li class="nav-list-item"><a href="https://github.com/haner199401" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Calendar</h1><div class="post-info">2016年8月22日</div><div class="post-content"><p><img src="https://raw.githubusercontent.com/haner199401/haner199401.github.io/blog-source/images/my-calendar.gif" alt><br><a id="more"></a></p>
+<h4 id="IE中的问题"><a href="#IE中的问题" class="headerlink" title="IE中的问题"></a>IE中的问题</h4><ul>
+<li>IE 事件源兼容</li>
+<li>IE new Date() BUG</li>
+<li>IE dom.innerHTML = ‘’; BUG<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">removeAllChild:<span class="function"><span class="keyword">function</span> (<span class="params">ele</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">while</span> (ele.hasChildNodes())&#123;</span><br><span class="line">            ele.removeChild(ele.lastChild);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="我的思路"><a href="#我的思路" class="headerlink" title="我的思路"></a>我的思路</h4><ul>
+<li>先把页面基本样子做出来（可以看到我源码里面 index.html 中注释掉的dom结构）</li>
+<li>之后想各个月有什么不同？看下电脑上的日历，点点</li>
+<li>每个月的第一天会变，之后的日期当然是依次排列。</li>
+<li>确定一个月的第一天处于礼拜几？这样就能够渲染出一个月来。</li>
+<li>接下里想一想，上一个月和下一个月 在可视的格子上 是否足够显示? 可以显示几天呢？</li>
+<li>方式一：计算出当前显示的月份有多少行 row * col = 总数，已知总数，已知当前月显示在礼拜几（第一行的第几个呗）这样也就能够计算出上一月能够显示几天喽，下一个同理。</li>
+<li>方式二：行数固定，按照方式一计算就行了。</li>
+<li>Core：[前一个月].concat([当前月],[下一个月]) </li>
+</ul>
+<h4 id="源码"><a href="#源码" class="headerlink" title="源码"></a><a href="https://github.com/haner199401/calendar" target="_blank" rel="noopener">源码</a></h4></div></article></div></section><footer><div class="paginator"><a href="/2017/06/28/javascript-note1/" class="prev">上一篇</a><a href="/2016/07/08/vue-toast/" class="next">下一篇</a></div><!--include partial/comment--><div class="copyright"><p>简单点,装逼的方式简单点~</p><p><a href="https://haner199401.github.io">Haner</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
