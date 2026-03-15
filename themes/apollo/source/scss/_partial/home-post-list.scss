@@ -1,27 +1,81 @@
 .home.post-list {
-    margin: 2em 0;
-    .post-list-item {
-        padding: 1em 0 2em;
-        border-bottom: 1px solid #ddd;
-        &:last-child {
-            border-bottom: 0px;
-        }
-    }
-    .post-content{
-        h2, h3, h4, h5, h6 {
-            &:before {
-                content: '';
-            }
-        }
-        & > ul {
-            list-style: initial;
-        }
+  margin: 3rem 0;
 
-        img{
-            max-height: 500px;
-        }
+  .post-list-item {
+    margin-bottom: 1.5rem;
+    padding: 1.75rem 2rem;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+      border-color: rgba(16, 185, 129, 0.25);
     }
-    .read-more {     
-        color: #42b983;
+  }
+
+  .post-block {
+    .post-title {
+      margin: 0 0 0.6rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-text);
     }
+  }
+
+  .post-content {
+    margin-top: 0.75rem;
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    h2, h3, h4, h5, h6 {
+      &:before {
+        content: '';
+      }
+    }
+
+    & > ul {
+      list-style: initial;
+    }
+
+    img {
+      max-height: 360px;
+      border-radius: var(--radius-md);
+    }
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .read-more {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: 0.01em;
+    transition: gap 0.2s ease;
+
+    &::after {
+      content: ' →';
+      display: inline-block;
+      margin-left: 4px;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover::after {
+      transform: translateX(4px);
+    }
+  }
 }
