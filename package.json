@@ -7,7 +7,7 @@
     "generate": "hexo clean && hexo generate && hexo server --p 4008"
   },
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "gulp": "^4.0.1",
